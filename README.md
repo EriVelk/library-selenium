@@ -1,0 +1,1 @@
+This repository exemplifies automated tests with Selenium WebDriver to my Library project (https://library-5ea0.onrender.com/)

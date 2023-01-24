@@ -6,7 +6,6 @@ import org.example.model.HomeModel;
 import org.example.model.LoginModel;
 import org.example.model.RegisterModel;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.devtools.v85.page.Page;
 import org.openqa.selenium.support.PageFactory;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
