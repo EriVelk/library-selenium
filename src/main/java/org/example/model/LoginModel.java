@@ -15,4 +15,7 @@ public class LoginModel {
 
     @FindBy(id = "btn-register") //XPath = //button[@id='btn-register' and @name='btn-register']
     public WebElement btnRegister;
+
+    @FindBy(xpath = "//h4[text()='Log In']")
+    public WebElement titleLogin;
 }

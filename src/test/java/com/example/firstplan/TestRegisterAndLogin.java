@@ -8,9 +8,13 @@ import org.example.model.CatalogModel;
 import org.example.model.HomeModel;
 import org.example.model.LoginModel;
 import org.example.model.RegisterModel;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.support.PageFactory;
 
 @TestMethodOrder(OrderAnnotation.class)
