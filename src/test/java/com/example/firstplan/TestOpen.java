@@ -9,11 +9,11 @@ import org.openqa.selenium.support.PageFactory;
  * Este test
  */
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class Test01 {
+public class TestOpen {
     private Browser browser;
     private HomeModel homeModel;
 
-    public Test01() {
+    public TestOpen() {
         this.browser = new Browser();
     }
 
