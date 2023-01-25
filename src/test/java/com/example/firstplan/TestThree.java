@@ -26,12 +26,11 @@ public class TestThree {
 
     @Test
     void test(){
-        String email = "prueba0@hotmail.com";
+        String email = "prueba@hotmail.com";
         String password = "veliz1122";
         Assertions.assertEquals("Library", browser.webDriver.getTitle());
         homeModel.login.click();
         this.loginModel = PageFactory.initElements(browser.webDriver, LoginModel.class);
-
         loginModel.email.sendKeys(email);
         loginModel.password.sendKeys(password);
 
