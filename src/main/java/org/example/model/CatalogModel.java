@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class CatalogModel {
-    @FindBy(id = "catalog")
+    @FindBy(xpath = "//h2[text()='Catalog Library']")
     public WebElement catlog;
 
     @FindBy(id = "logout")

@@ -5,11 +5,11 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class Browser {
 
-    public WebDriver webDriver;
+    public static WebDriver webDriver;
     //private final String url = "https://library-5ea0.onrender.com/";
 
-    private final String url = "http://localhost:3000/";
-    public void getBrowser(){
+    private static final String url = "http://localhost:3000/";
+    public static void getBrowser(){
         String pathDriver = "D:\\Erick_Trabajo\\Desktop\\Tecnologias\\Testing\\Java\\Selenium\\Library\\library\\src\\main\\resources\\driver\\msedgedriver.exe";
         System.setProperty("webdriver.edge.driver", pathDriver);
         webDriver = new EdgeDriver();
@@ -17,7 +17,7 @@ public class Browser {
         webDriver.manage().window().maximize();
     }
 
-    public void closeBrowser(){
+    public static void closeBrowser(){
         webDriver.quit();
     }
 }

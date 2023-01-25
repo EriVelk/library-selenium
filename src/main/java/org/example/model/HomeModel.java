@@ -15,6 +15,6 @@ public class HomeModel {
     @FindBy(id = "link-github")
     public WebElement linkGithub;
 
-    @FindBy(tagName = "a")
-    public List<WebElement> lista;
+    @FindBy(xpath = "//h1[@class='card-header' and text()='Library with NodeJS, Express, Authenticate-Passport, MongoDB and Bootstrap 5']")
+    public WebElement titleHeader;
 }

@@ -9,14 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TestLogin {
-    private Browser browser;
+    private Browser browser = new Browser();
     private HomeModel homeModel;
     private LoginModel loginModel;
     private CatalogModel catalogModel;
-
-    public TestLogin() {
-        this.browser = new Browser();
-    }
 
     @BeforeAll
     void setUp(){
