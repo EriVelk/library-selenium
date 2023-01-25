@@ -9,14 +9,14 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.support.PageFactory;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class TestTwo {
+public class Test02 {
     private Browser browser;
     private HomeModel homeModel;
     private LoginModel loginModel;
     private RegisterModel registerModel;
     private CatalogModel catalogModel;
 
-    public TestTwo() {
+    public Test02() {
         this.browser = new Browser();
     }
 

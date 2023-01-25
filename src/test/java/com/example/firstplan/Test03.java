@@ -8,13 +8,13 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.support.PageFactory;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class TestThree {
+public class Test03 {
     private Browser browser;
     private HomeModel homeModel;
     private LoginModel loginModel;
     private CatalogModel catalogModel;
 
-    public TestThree() {
+    public Test03() {
         this.browser = new Browser();
     }
 
