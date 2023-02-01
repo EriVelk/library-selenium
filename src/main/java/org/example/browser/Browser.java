@@ -1,5 +1,6 @@
 package org.example.browser;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
@@ -14,7 +15,8 @@ public class Browser {
         System.setProperty("webdriver.edge.driver", pathDriver);
         webDriver = new EdgeDriver();
         webDriver.get(url);
-        webDriver.manage().window().maximize();
+        //webDriver.manage().window().maximize();
+        webDriver.manage().window().setSize(new Dimension(1100, 959));
     }
 
     public static void closeBrowser(){
