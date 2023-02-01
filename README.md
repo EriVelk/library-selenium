@@ -10,11 +10,12 @@ The browser used is Microsoft Edge in its version: 109.0.1518.70 (Official build
 If you want to use a different browser, you must update the driver to the corresponding version, and in the Browser class within the org.example.browser package update line 16 webDriver = new EdgeDriver(); por webDriver = new (Instance to driver)
 ## Español
 
-Esto es un proyecto construido con el gestor de paquetes maven, incluye la dependencia selenium, apache poi y logs para la correcta construcción de este. El propósito principal del proyecto es automatizar las pruebas a mi proyecto personar "Library" (https://library-5ea0.onrender.com/), generando reportes en formato Word con capturas de pantalla de cada paso ejecutado por los casos de prueba.
+Esto es un proyecto construido con el gestor de paquetes maven, incluye la dependencia selenium, apache poi y logs para la correcta construcción de este. El propósito principal del proyecto es automatizar las pruebas a mi proyecto personal "Library" (https://library-5ea0.onrender.com/), generando reportes en formato Word con capturas de pantalla de cada paso ejecutado por los casos de prueba.
 
 El navegador utilizado es Microsoft Edge en su versión: 109.0.1518.70 (Compilación oficial) (64 bits). Así que el Web driver utilizado es el mismo incluido en la carpeta del proyecto resources/driver/driver.exe
 
 Si se desea utilizar un navegador diferente, deberá de actualizar el driver a la versión correspondiente, y en la clase Browser dentro del paquete org.example.browser actualizar la línea 16 webDriver = new EdgeDriver(); por webDriver = new (Instancia al driver)
+
 
 ## Screenshots
 
