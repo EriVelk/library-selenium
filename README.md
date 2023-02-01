@@ -23,6 +23,16 @@ In the same project folder
 
 ![App Screenshot](https://i.postimg.cc/yNFFCf90/Project.png)
 
+## Installation
+
+Install my-project with maven
+
+```bash
+  mvn Install
+  mvn build
+  mvn run
+```
+
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://portfolio-erivelk.vercel.app/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/erick-veliz-5a40331b9/)
