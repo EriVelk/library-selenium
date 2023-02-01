@@ -7,9 +7,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 public class Browser {
 
     public static WebDriver webDriver;
-    //private final String url = "https://library-5ea0.onrender.com/";
+    private static final String url = "https://library-5ea0.onrender.com/";
 
-    private static final String url = "http://localhost:3000/";
+    //private static final String url = "http://localhost:3000/";
     public static void getBrowser(){
         String pathDriver = "D:\\Erick_Trabajo\\Desktop\\Tecnologias\\Testing\\Java\\Selenium\\Library\\library\\src\\main\\resources\\driver\\msedgedriver.exe";
         System.setProperty("webdriver.edge.driver", pathDriver);
