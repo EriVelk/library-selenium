@@ -4,6 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class RegisterModel {
+    @FindBy(xpath = "//h4[@class='card-title text-center' and text()='Register']")
+    public WebElement title;
+
     @FindBy(id="name")
     public WebElement name;
 

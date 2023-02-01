@@ -24,8 +24,8 @@ public class TestLogin {
     private HomeModel homeModel;
     Screenshot screenshot = new Screenshot();
     Document document = new Document();
-    private final LinkedHashMap<String, File> captures = new LinkedHashMap<>();
-    private final HashMap<String, String> errors = new HashMap<>();
+    LinkedHashMap<String, File> captures = new LinkedHashMap<>();
+    HashMap<String, String> errors = new HashMap<>();
 
     @BeforeAll
     void setUp(){

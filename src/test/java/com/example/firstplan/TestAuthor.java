@@ -1,9 +1,7 @@
 package com.example.firstplan;
 
 import com.example.firstplan.model.Author;
-import com.example.firstplan.model.UserLogin;
-import com.example.firstplan.model.UserRegister;
-import com.example.firstplan.utils.Constants;
+import com.example.firstplan.utils.ConstantsTest;
 import org.example.browser.Browser;
 import org.example.model.AuthorListModel;
 import org.example.model.AuthorRegisterModel;
@@ -41,7 +39,7 @@ public class TestAuthor {
     @Order(1)
     void open(){
         this.homeModel = PageFactory.initElements(Browser.webDriver, HomeModel.class);
-        Assertions.assertEquals(Constants.titleHome, homeModel.titleHeader.getText());
+        Assertions.assertEquals(ConstantsTest.titleHome, homeModel.titleHeader.getText());
     }
 
     @Test
@@ -50,9 +48,9 @@ public class TestAuthor {
         this.homeModel = PageFactory.initElements(Browser.webDriver, HomeModel.class);
         homeModel.login.click();
         this.loginModel = PageFactory.initElements(Browser.webDriver, LoginModel.class);
-        Assertions.assertEquals(Constants.titleLogin, loginModel.titleLogin.getText());
-        loginModel.email.sendKeys(Constants.email);
-        loginModel.password.sendKeys(Constants.password);
+        Assertions.assertEquals(ConstantsTest.titleLogin, loginModel.titleLogin.getText());
+        loginModel.email.sendKeys(ConstantsTest.email);
+        loginModel.password.sendKeys(ConstantsTest.password);
         loginModel.btnLogin.click();
     }
 
@@ -60,13 +58,13 @@ public class TestAuthor {
     @Order(3)
     void create(){
         this.catalogModel = PageFactory.initElements(Browser.webDriver, CatalogModel.class);
-        Assertions.assertEquals(Constants.titleCatalog, catalogModel.catlog.getText());
+        Assertions.assertEquals(ConstantsTest.titleCatalog, catalogModel.catlog.getText());
         catalogModel.menuAuthors.click();
         this.authorListModel = PageFactory.initElements(Browser.webDriver, AuthorListModel.class);
-        Assertions.assertEquals(Constants.titleAuthorList,authorListModel.titleAuthors.getText());
+        Assertions.assertEquals(ConstantsTest.titleAuthorList,authorListModel.titleAuthors.getText());
         authorListModel.btnCreateAuthor.click();
         this.authorRegisterModel = PageFactory.initElements(Browser.webDriver, AuthorRegisterModel.class);
-        Assertions.assertEquals(Constants.titleAuthorRegister, authorRegisterModel.titleCreateAuthor.getText());
+        Assertions.assertEquals(ConstantsTest.titleAuthorRegister, authorRegisterModel.titleCreateAuthor.getText());
         Author author = new Author("Rodrigo", "Estrada", "25111995");
         authorRegisterModel.firstName.sendKeys(author.getFirstName());
         authorRegisterModel.familyName.sendKeys(author.getFamilyName());

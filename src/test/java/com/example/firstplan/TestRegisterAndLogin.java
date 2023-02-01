@@ -2,7 +2,7 @@ package com.example.firstplan;
 
 import com.example.firstplan.model.UserLogin;
 import com.example.firstplan.model.UserRegister;
-import com.example.firstplan.utils.Constants;
+import com.example.firstplan.utils.ConstantsTest;
 import org.example.browser.Browser;
 import org.example.model.CatalogModel;
 import org.example.model.HomeModel;
@@ -33,7 +33,7 @@ public class TestRegisterAndLogin {
     @Order(1)
     void testOpen(){
         this.homeModel = PageFactory.initElements(Browser.webDriver, HomeModel.class);
-        Assertions.assertEquals(Constants.titleHome, homeModel.titleHeader.getText());
+        Assertions.assertEquals(ConstantsTest.titleHome, homeModel.titleHeader.getText());
     }
 
     @Test
@@ -65,7 +65,7 @@ public class TestRegisterAndLogin {
         loginModel.btnLogin.click();
 
         this.catalogModel = PageFactory.initElements(Browser.webDriver, CatalogModel.class);
-        Assertions.assertEquals(Constants.titleCatalog, catalogModel.catlog.getText());
+        Assertions.assertEquals(ConstantsTest.titleCatalog, catalogModel.catlog.getText());
         catalogModel.logout.click();
     }
 
